@@ -2,18 +2,18 @@ export type Experience = { role: string; company: string; period: string; bullet
 export type Project = { title: string; description: string; stack: string[]; status?: string; links: { label: string; href: string }[] };
 
 export const profile = {
-  name: "Andon [TODO last name]",
+  name: "Andon Lafreniere",
   intro: "Computer Science student at The Ohio State University (Honors Program), Mathematics minor.",
   expected: "Expected May 2028",
-  email: "[TODO email]",
-  github: "[TODO GitHub link]",
-  linkedin: "[TODO LinkedIn link]",
+  email: "andonlafreniere2706@gmail.com",
+  github: "https://github.com/Andon-LaFreniere",
+  linkedin: "https://www.linkedin.com/in/andonlaf/",
   resume: "[TODO resume PDF link]",
 };
 
 export const experience: Experience[] = [
-  { role: "Software Engineering Intern", company: "American Electric Power (AEP)", period: "[TODO dates]", bullets: ["Full-stack performance optimization.", "[TODO quantified impact bullet]", "[TODO quantified impact bullet]"] },
-  { role: "IT Intern", company: "Sabel Systems", period: "[TODO dates]", bullets: ["[TODO responsibility or outcome]", "[TODO responsibility or outcome]"] },
+  { role: "Software Engineering Intern", company: "American Electric Power (AEP)", period: "May 2026 – August 2026", bullets: ["Improved performance in a C# ASP.NET application.", "[TODO quantified impact bullet]", "[TODO quantified impact bullet]"] },
+  { role: "IT Intern", company: "Sabel Systems", period: "May 2025 – August 2025", bullets: ["Vulnerability remediation.", "Python and SQL scripting.", "CMMC compliance support."] },
 ];
 
 export const projects: Project[] = [
@@ -23,6 +23,6 @@ export const projects: Project[] = [
   { title: "Real-time Object Tracking", description: "C++ and OpenCV tracking pipeline focused on reliable frame-to-frame identity across moving objects.", stack: ["C++", "OpenCV"], status: "In progress", links: [{ label: "Code", href: "[TODO link]" }] },
 ];
 
-export const education = { school: "The Ohio State University", degree: "B.S. Computer Science", minor: "Mathematics minor · Honors Program", gpa: "3.914", expected: "Expected May 2028", coursework: "[TODO coursework]" };
-export const skills = { Languages: "Java · Python · C++ · TypeScript · SQL", Backend: "Spring Boot · FastAPI · REST · Kafka", "Data / ML": "Apache Spark · scikit-learn · MLflow · Delta Lake", "Cloud / DevOps": "AWS · S3 · Docker · Terraform · Git", Frontend: "React · HTML · CSS" };
+export const education = { school: "The Ohio State University", degree: "B.S. Computer Science", minor: "Mathematics minor · Honors Program", gpa: "3.914", expected: "Expected May 2028", coursework: "Software I & II · Foundations I & II · Systems I · Linear Algebra" };
+export const skills = { Languages: "Java · Python · C++ · TypeScript · SQL", Backend: "Spring Boot · ASP.NET · FastAPI · REST · Kafka", "Data / ML": "Apache Spark · scikit-learn · MLflow · Delta Lake", "Cloud / DevOps": "AWS · S3 · Docker · Terraform · Git", Frontend: "React · HTML · CSS" };
 export const involvement = ["VP Membership, Kappa Theta Pi", "AI Club", "Big Data Analytics Association"];
