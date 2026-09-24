@@ -1,96 +1,47 @@
-# Andon 2025 — Personal Portfolio Website
+# Andon Portfolio
 
-This is my personal portfolio website built with **Next.js**, designed to showcase my favorite projects, experiences, and contact information. It’s a clean, modern, and responsive web app meant to help others easily explore my work and background.
+A dark, minimal portfolio built with Vite, TypeScript, Three.js, and plain CSS. The fixed point-cloud hero uses deterministic IFS / chaos-game generators and a vertex-shader morph between four geometric fractals.
 
----
+## Development
 
-## Features
-
-- **Next.js 14** app with TypeScript support  
-- **Responsive design** that adapts to any device  
-- **Project showcase** section highlighting my favorite work  
-- **Experience gallery** with logos and visuals  
-- **Optimized assets** for fast performance  
-- **Custom global styling** via `globals.css`
-
----
-
-## Project Structure
-
-```
-andon-2025/
-├── app/                # Core Next.js app directory
-│   ├── layout.tsx      # Global page layout
-│   ├── page.tsx        # Homepage content (editable)
-│   └── globals.css     # Global site styling
-├── public/             # Static assets and images
-│   ├── DLG.jpg
-│   ├── KL.png
-│   ├── SSlogo.jpg
-│   ├── bt.png
-│   ├── favicon.ico
-│   └── globe.svg
-├── package.json        # Dependencies and scripts
-├── next.config.ts      # Next.js configuration
-├── tsconfig.json       # TypeScript configuration
-└── README.md
+```bash
+npm install
+npm run dev
 ```
 
----
+Open the local URL printed by Vite. For a production preview:
 
-## Getting Started
+```bash
+npm run build
+npm run preview
+```
 
-To run this project locally:
+The build currently emits approximately 122 kB gzip for JavaScript and 2 kB gzip for CSS. Three.js is intentionally kept as the only runtime dependency.
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Andon-LaFreniere/andon-2025.git
-   cd andon-2025
-   ```
+## Structure
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+```text
+src/
+  content/content.ts       Typed portfolio copy and TODO placeholders
+  fractals/generators.ts   Deterministic chaos-game point clouds
+  scene.ts                 Three.js renderer and morph shaders
+  scroll.ts                Smooth scroll dimming and nav state
+  styles/main.css          Layout, responsive styles, and motion rules
+  main.ts                  Semantic page renderer and observers
+```
 
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
+Edit `src/content/content.ts` to replace the clearly marked links, dates, coursework, bullets, and identity fields. The layout does not need to change for normal copy updates.
 
-4. **Visit your local site:**
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
+## Deployment
 
----
+### Vercel
 
-##  Customization
+Import the repository in Vercel. Use `npm run build` as the build command and `dist` as the output directory. Vercel detects Vite automatically for most projects.
 
-To personalize or update the content:
+### Cloudflare Pages
 
-- **Edit `app/page.tsx`** — main page layout and text  
-- **Update images in `public/`** — replace with your own images or logos  
-- **Modify `globals.css`** — adjust colors, fonts, or layout styling  
-- **Add new sections** by creating additional `.tsx` files under `app/`
+Create a Pages project from the repository. Use `npm run build` as the build command and `dist` as the build output directory.
 
----
+## Accessibility and performance
 
-##  Deployment
-
-You can deploy this project easily on **Vercel** (recommended):
-
-1. Go to [https://vercel.com](https://vercel.com)
-2. Import your GitHub repository (`Andon-LaFreniere/andon-2025`)
-3. Click **Deploy**
-
-Vercel will automatically detect it as a Next.js app and set everything up for you.
-
----
-
-## 📬 Contact
-
-If you’d like to connect or collaborate, you can find my contact information directly on the site.
-
----
-
-**Made by [Andon Lafreniere](https://github.com/Andon-LaFreniere)**
-
+The scene caps device pixel ratio at 2, pauses its render work while the document is hidden, disposes GPU resources on teardown, falls back to cyan SVG line art when WebGL is unavailable, and honors `prefers-reduced-motion`. Content remains semantic and usable without the canvas.
