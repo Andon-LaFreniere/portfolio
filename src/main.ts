@@ -9,7 +9,7 @@ app.innerHTML = `
   <canvas id="fractal-canvas" aria-hidden="true"></canvas>
   <div class="webgl-fallback" id="webgl-fallback" hidden aria-hidden="true"><svg viewBox="0 0 240 160" role="img" aria-label="Geometric line art"><path d="M20 130 120 20l100 110-100-38zM20 130l100-38 100 38M120 20v72"/></svg></div>
   <div class="hero-noise" aria-hidden="true"></div>
-  <header class="hero" id="top"><p class="eyebrow">Portfolio / 2026</p><h1>${profile.name}</h1><p class="scroll-cue"><span>Scroll to explore</span><i></i></p></header>
+  <header class="hero" id="top"><p class="eyebrow">Portfolio / 2026</p><h1>${profile.name}</h1><p class="scroll-cue"><span>more info...</span><i></i></p></header>
   <nav class="site-nav" id="site-nav" aria-label="Primary navigation"><a class="nav-name" href="#top">${profile.name}</a><div>${["about", "experience", "projects", "education", "skills", "involvement", "contact"].map((item) => `<a href="#${item}">${item}</a>`).join("")}</div></nav>
   <main class="content">
     <section id="about" class="section reveal"><p class="section-index">01</p><div><h2>About</h2><p class="lede">I'm interested in applied mathematics and software.</p><p>I'm an undergraduate at The Ohio State University, majoring in Computer Science and Engineering and minoring in Mathematics. My work spans enterprise software engineering and IT, research in machine learning, and open-source projects. I'm always open to new opportunities.</p></div></section>
