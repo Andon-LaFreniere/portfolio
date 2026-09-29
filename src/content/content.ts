@@ -23,6 +23,6 @@ export const projects: Project[] = [
   { title: "Real-time Object Tracking", description: "C++ and OpenCV tracking pipeline focused on reliable frame-to-frame identity across moving objects.", stack: ["C++", "OpenCV"], status: "In progress", links: [{ label: "Code", href: "[TODO link]" }] },
 ];
 
-export const education = { school: "The Ohio State University", degree: "B.S. Computer Science", minor: "Mathematics minor · Honors Program", gpa: "3.914", expected: "Expected May 2028", coursework: "Software I & II · Foundations I & II · Systems I · Linear Algebra" };
+export const education = { school: "The Ohio State University", degree: "B.S. Computer Science", minor: "Mathematics minor · Honors Program", gpa: "3.9 / 4.0", expected: "Expected May 2028", coursework: "Computer Architecture · Data Structures & Algorithms · Web Apps" };
 export const skills = { Languages: "Java · Python · C++ · TypeScript · SQL", Backend: "Spring Boot · ASP.NET · FastAPI · REST · Kafka", "Data / ML": "Apache Spark · scikit-learn · MLflow · Delta Lake", "Cloud / DevOps": "AWS · S3 · Docker · Terraform · Git", Frontend: "React · HTML · CSS" };
 export const involvement = ["VP Membership, Kappa Theta Pi", "AI Club", "Big Data Analytics Association"];
