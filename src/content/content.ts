@@ -2,7 +2,7 @@ export type Experience = { role: string; company: string; period: string; bullet
 export type Project = { title: string; description: string; stack: string[]; status?: string; links: { label: string; href: string }[] };
 
 export const profile = {
-  name: "Andon",
+  name: "@ndon",
   intro: "Computer Science student at The Ohio State University (Honors Program), Mathematics minor.",
   expected: "Expected May 2028",
   email: "andonlafreniere2706@gmail.com",
@@ -12,8 +12,8 @@ export const profile = {
 };
 
 export const experience: Experience[] = [
-  { role: "Software Engineering Intern", company: "American Electric Power (AEP)", period: "May 2026 – August 2026", bullets: ["Improved performance in a C# ASP.NET application.", "[TODO quantified impact bullet]", "[TODO quantified impact bullet]"] },
-  { role: "IT Intern", company: "Sabel Systems", period: "May 2025 – August 2025", bullets: ["Vulnerability remediation.", "Python and SQL scripting.", "CMMC compliance support."] },
+  { role: "Software Engineering Intern", company: "American Electric Power (AEP)", period: "May 2026 – August 2026", bullets: ["Improved performance in a C# ASP.NET application."] },
+  { role: "Technology Intern", company: "Sabel Systems", period: "May 2025 – August 2025", bullets: ["Python and SQL scripting."] },
 ];
 
 export const projects: Project[] = [
