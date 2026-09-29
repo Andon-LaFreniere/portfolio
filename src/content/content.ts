@@ -8,7 +8,7 @@ export const profile = {
   email: "andonlafreniere2706@gmail.com",
   github: "https://github.com/Andon-LaFreniere",
   linkedin: "https://www.linkedin.com/in/andonlaf/",
-  resume: "[TODO resume PDF link]",
+  resume: "https://drive.google.com/file/d/1ubpGTlZfYkiREzn65ltB5b-bPgoQl4Hs/view?usp=sharing",
 };
 
 export const experience: Experience[] = [
