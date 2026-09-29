@@ -2,7 +2,7 @@ export type Experience = { role: string; company: string; period: string; bullet
 export type Project = { title: string; description: string; stack: string[]; status?: string; links: { label: string; href: string }[] };
 
 export const profile = {
-  name: "Andon Lafreniere",
+  name: "Andon",
   intro: "Computer Science student at The Ohio State University (Honors Program), Mathematics minor.",
   expected: "Expected May 2028",
   email: "andonlafreniere2706@gmail.com",
